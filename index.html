@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saad Mriki | Développeur Full-Stack | .NET & Laravel</title>
+    <link rel="icon" type="image/png" href="assets/photo.jpg" />
+
+    <meta
+      name="description"
+      content="Portfolio de Saad Mriki, futur ingénieur en Génie Informatique à l'ENSA Fès et développeur Full-Stack spécialisé en .NET, Laravel, React, SQL Server et MySQL."
+    />
+
+    <meta
+      name="keywords"
+      content="Saad Mriki, Mriki Saad, Développeur Full-Stack, Développeur .NET, Laravel, ASP.NET Core, React, Flutter, C#, SQL Server, MySQL, ENSA Fès, Backend Developer, API REST, Portfolio, Fès, Maroc"
+    />
+
+    <meta name="author" content="Saad Mriki" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ───────── NAVIGATION ───────── -->
+    <header class="nav" id="nav">
+      <a href="#hero" class="nav-logo">Saad<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Profil</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expériences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a
+          href="assets/Saad_Mriki_CV.pdf"
+          class="nav-cv"
+          download
+          >CV</a
+        >
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ───────── HERO ───────── -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="hero-badge">
+            <span class="dot"></span> Stage PFE 2027 — disponible
+          </span>
+
+          <h1>
+            Saad <span class="accent">Mriki</span>
+          </h1>
+
+          <h2 class="hero-role">
+            <span id="typed"></span><span class="caret">|</span>
+          </h2>
+
+          <p class="hero-sub">
+            Futur ingénieur en <strong>Génie Informatique</strong> à l'ENSA Fès,
+            spécialisé en <strong>développement Full-Stack</strong> —
+            <strong>Laravel</strong>, <strong>ASP.NET Core</strong> et
+            <strong>React</strong>. Je conçois des API REST sécurisées et des
+            interfaces web performantes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+            <a
+              href="assets/Saad_Mriki_CV.pdf"
+              class="btn btn-outline"
+              download
+              >Télécharger le CV</a
+            >
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+
+          <div class="hero-socials">
+            <a
+              href="https://github.com/Saad-mrk"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3.01.4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mriki-saad/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
+                />
+              </svg>
+            </a>
+            <a href="mailto:saadmrk12@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M1.5 4.5h21A1.5 1.5 0 0 1 24 6v12a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 18V6a1.5 1.5 0 0 1 1.5-1.5Zm10.5 8.27L2.7 6.3h18.6L12 12.77ZM2 7.66V18h20V7.66l-10 6.5-10-6.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-bg">
+              <img src="assets/photo.jpg" alt="Saad Mriki" class="avatar-img" />
+            </div>
+            <div class="avatar-glow"></div>
+            <div class="float-tag tag-top">
+              <span class="tag-dot"></span> Full-Stack Dev
+            </div>
+            <div class="float-tag tag-bottom">🎓 ENSA Fès</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint">
+        <span class="scroll-line"></span> Défiler
+      </a>
+    </section>
+
+    <!-- ───────── ABOUT ───────── -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="section-label">Profil</span>
+        <h2 class="section-title">Qui suis-je ?</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Je suis <strong>Saad Mriki</strong>, étudiant-ingénieur en dernière
+            année de <strong>Génie Informatique</strong> à
+            <strong>l'ENSA Fès</strong>, spécialisé en
+            <strong>développement Full-Stack</strong>.
+          </p>
+          <p>
+            Mon expertise couvre la conception d'<strong>API REST sécurisées</strong>,
+            le développement d'<strong>interfaces web dynamiques</strong> et la
+            <strong>modélisation de bases de données relationnelles</strong>. Je
+            travaille principalement avec
+            <strong>Laravel</strong>, <strong>ASP.NET Core</strong> et
+            <strong>React</strong>.
+          </p>
+          <p>
+            Je recherche actuellement un
+            <strong>stage PFE de 6 mois à partir de février 2027</strong> en
+            développement Full-Stack, où je pourrai mettre à profit mes
+            compétences sur des projets à fort impact.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <div class="stat-label">Projets GitHub</div>
+            </div>
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <div class="stat-label">Stages réalisés</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info reveal" style="transition-delay: 0.12s">
+          <ul class="info-list">
+            <li>
+              <span class="info-key">Formation</span>
+              <span class="info-val">Génie Informatique — ENSA Fès</span>
+            </li>
+            <li>
+              <span class="info-key">Email</span>
+              <span class="info-val">
+                <a href="mailto:saadmrk12@gmail.com">saadmrk12@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-key">Téléphone</span>
+              <span class="info-val">
+                <a href="tel:+212621246089">+212 621 246 089</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-key">Localisation</span>
+              <span class="info-val">Fès, Maroc</span>
+            </li>
+            <li>
+              <span class="info-key">LinkedIn</span>
+              <span class="info-val">
+                <a
+                  href="https://www.linkedin.com/in/mriki-saad/"
+                  target="_blank"
+                  rel="noopener"
+                  >mriki-saad</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="info-key">GitHub</span>
+              <span class="info-val">
+                <a
+                  href="https://github.com/Saad-mrk"
+                  target="_blank"
+                  rel="noopener"
+                  >@Saad-mrk</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="info-key">Langues</span>
+              <span class="info-val">Arabe, Français (B2), Anglais technique</span>
+            </li>
+            <li>
+              <span class="info-key">Recherche</span>
+              <span class="info-val">Stage PFE — février 2027</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── SKILLS ───────── -->
+    <section id="skills" class="section alt">
+      <div class="section-head">
+        <span class="section-label">Compétences</span>
+        <h2 class="section-title">Stack technique</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">⚙️ Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">ASP.NET Core</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">API RESTful</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">RBAC</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal" style="transition-delay: 0.08s">
+          <div class="skill-cat-title">🎨 Frontend &amp; Mobile</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal" style="transition-delay: 0.16s">
+          <div class="skill-cat-title">🗄️ Bases de données</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">ADO.NET</span>
+            <span class="skill-tag">Modélisation MCD/MLD</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal" style="transition-delay: 0.24s">
+          <div class="skill-cat-title">🏗️ Architecture &amp; Méthodes</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">Three-Tier</span>
+            <span class="skill-tag">UML</span>
+            <span class="skill-tag">Agile / Scrum</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal" style="transition-delay: 0.32s">
+          <div class="skill-cat-title">🧰 Outils</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Swagger / OpenAPI 3.0</span>
+            <span class="skill-tag">Firebase Cloud Messaging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── EXPERIENCE ───────── -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <span class="section-label">Expériences</span>
+        <h2 class="section-title">Expériences professionnelles</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-top">
+              <h3>Stagiaire Full-Stack Web &amp; Mobile</h3>
+              <span class="timeline-date">Juin 2026 — Août 2026</span>
+            </div>
+            <div class="timeline-company">Collabors Impact · Casablanca</div>
+            <ul>
+              <li>
+                Développement en équipe de 5 (Agile) d'une plateforme
+                <strong>CRM et Marketplace B2B/B2C</strong> Web et Mobile à 4
+                profils (fournisseurs, administrateurs, clients, livreurs).
+              </li>
+              <li>
+                Conception d'<strong>API REST Laravel</strong> avec contrôle
+                d'accès par rôles (<strong>RBAC</strong>) et réalisation des
+                interfaces web avec <strong>React</strong>.
+              </li>
+              <li>
+                Modélisation et optimisation du schéma relationnel
+                <strong>MySQL</strong>.
+              </li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Laravel</span>
+              <span class="chip">React</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">RBAC</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-top">
+              <h3>Stagiaire Développeur Full-Stack</h3>
+              <span class="timeline-date">Juin 2025 — Juillet 2025</span>
+            </div>
+            <div class="timeline-company">
+              Artificial &amp; Business Intelligence Soft
+            </div>
+            <ul>
+              <li>
+                Développement d'une application web de gestion pour un cabinet
+                comptable.
+              </li>
+              <li>
+                Conception du modèle de données et génération automatique de
+                factures PDF.
+              </li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Laravel</span>
+              <span class="chip">React</span>
+              <span class="chip">SQL Server</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── PROJECTS ───────── -->
+    <section id="projects" class="section alt">
+      <div class="section-head">
+        <span class="section-label">Projets</span>
+        <h2 class="section-title">Ce que j'ai construit</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- LBAL featured -->
+        <article class="card project-card featured reveal">
+          <div class="project-main">
+            <div class="project-lang">ASP.NET Core · React</div>
+            <h3>🛍️ LBAL — Marketplace Vintage</h3>
+            <p>
+              Marketplace e-commerce complète (catalogue filtrable, messagerie
+              temps réel, favoris) en
+              <strong>Clean Architecture 4 couches</strong>, sécurisée par
+              <strong>JWT, refresh tokens et rate limiting</strong>, avec API
+              documentée sous Swagger et tests d'intégration.
+            </p>
+            <div class="chip-row">
+              <span class="chip">ASP.NET Core</span>
+              <span class="chip">React</span>
+              <span class="chip">Clean Architecture</span>
+              <span class="chip">JWT</span>
+              <span class="chip">Swagger</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Saad-mrk/LBAL"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >Frontend →</a
+              >
+              <a
+                href="https://github.com/Saad-mrk/lbal-backend"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                >Backend API →</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">🛍️</div>
+        </article>
+
+        <!-- ATLAS FITNESS -->
+        <article class="card project-card reveal">
+          <div class="project-icon">💪</div>
+          <div class="project-lang">C# · Windows Forms</div>
+          <h3>ATLAS FITNESS</h3>
+          <p>
+            Application desktop de gestion de salle de sport : membres,
+            abonnements, séances et paiements, avec tableau de bord,
+            authentification par rôles, export Excel et génération de QR codes.
+          </p>
+          <div class="chip-row">
+            <span class="chip">C#</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">ADO.NET</span>
+          </div>
+          <a
+            href="https://github.com/Saad-mrk/ATLAS-FITNESS"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+            >Voir le projet →</a
+          >
+        </article>
+
+        <!-- VISION GUARD -->
+        <article class="card project-card reveal">
+          <div class="project-icon">🛡️</div>
+          <div class="project-lang">Python · OpenCV</div>
+          <h3>VISION GUARD</h3>
+          <p>
+            Système de détection et gestion de visages pour caméras. Il
+            enregistre les passages détectés, identifie des personnes, affiche
+            l'historique avec images et gère les accès.
+          </p>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">OpenCV</span>
+          </div>
+          <a
+            href="https://github.com/Saad-mrk/VISION-GUARD"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+            >Voir le projet →</a
+          >
+        </article>
+
+        <!-- DVLD -->
+        <article class="card project-card reveal">
+          <div class="project-icon">📊</div>
+          <div class="project-lang">C# · Three-Tier</div>
+          <h3>DVLD Project</h3>
+          <p>
+            Système de gestion des permis de conduire — application
+            administrative complète développée en C# avec une architecture
+            en couches propre.
+          </p>
+          <div class="chip-row">
+            <span class="chip">C#</span>
+            <span class="chip">SQL Server</span>
+          </div>
+          <a
+            href="https://github.com/Saad-mrk/DVLD-Project"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+            >Voir le projet →</a
+          >
+        </article>
+
+        <!-- Cabinet comptabilite -->
+        <article class="card project-card reveal">
+          <div class="project-icon">🧮</div>
+          <div class="project-lang">Laravel · Blade</div>
+          <h3>Cabinet Comptable</h3>
+          <p>
+            Application web de gestion pour un cabinet comptable, développée
+            avec Laravel. Gère les clients, les dossiers et les opérations
+            comptables.
+          </p>
+          <div class="chip-row">
+            <span class="chip">Laravel</span>
+            <span class="chip">PHP</span>
+            <span class="chip">Blade</span>
+          </div>
+          <a
+            href="https://github.com/Saad-mrk/cabinet-comptabilite"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+            >Voir le projet →</a
+          >
+        </article>
+
+        <!-- 8 Pool -->
+        <article class="card project-card reveal">
+          <div class="project-icon">🎱</div>
+          <div class="project-lang">C#</div>
+          <h3>8 Pool Game</h3>
+          <p>
+            Jeu de billard américain avec rendu graphique complet et logique de
+            jeu, démontrant une bonne maîtrise des interfaces graphiques .NET.
+          </p>
+          <div class="chip-row">
+            <span class="chip">C#</span>
+            <span class="chip">.NET</span>
+          </div>
+          <a
+            href="https://github.com/Saad-mrk/8_pool"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+            >Voir le projet →</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── EDUCATION ───────── -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <span class="section-label">Formation</span>
+        <h2 class="section-title">Parcours académique</h2>
+      </div>
+
+      <div class="timeline edu">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-top">
+              <h3>Cycle Ingénieur en Génie Informatique</h3>
+              <span class="timeline-date">2024 — 2027</span>
+            </div>
+            <div class="timeline-company">
+              École Nationale des Sciences Appliquées de Fès (ENSA Fès) · Fès,
+              Maroc
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-top">
+              <h3>Cycle Préparatoire Intégré</h3>
+              <span class="timeline-date">2022 — 2024</span>
+            </div>
+            <div class="timeline-company">ENSA Fès · Fès, Maroc</div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-top">
+              <h3>Baccalauréat Sciences Physiques — Mention Bien</h3>
+              <span class="timeline-date">2022</span>
+            </div>
+            <div class="timeline-company">Maroc</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── CONTACT ───────── -->
+    <section id="contact" class="section contact">
+      <div class="contact-glow"></div>
+      <div class="section-head">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Travaillons ensemble.</h2>
+      </div>
+      <p class="contact-sub reveal">
+        Disponible pour un <strong>stage PFE de 6 mois à partir de février
+        2027</strong>, des collaborations ou de nouveaux projets. N'hésitez pas
+        à me contacter !
+      </p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:saadmrk12@gmail.com" class="contact-link">
+          <span>📧</span> saadmrk12@gmail.com
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mriki-saad/"
+          target="_blank"
+          rel="noopener"
+          class="contact-link"
+        >
+          <span>💼</span> LinkedIn
+        </a>
+        <a
+          href="https://github.com/Saad-mrk"
+          target="_blank"
+          rel="noopener"
+          class="contact-link"
+        >
+          <span>🐙</span> GitHub
+        </a>
+        <a href="tel:+212621246089" class="contact-link">
+          <span>📱</span> +212 621 246 089
+        </a>
+        <a
+          href="assets/Saad_Mriki_CV.pdf"
+          download
+          class="contact-link"
+        >
+          <span>📄</span> Télécharger le CV
+        </a>
+      </div>
+    </section>
+
+    <!-- ───────── FOOTER ───────── -->
+    <footer>
+      <span>© 2026 Saad Mriki — ENSA Fès</span>
+      <a href="https://github.com/Saad-mrk" target="_blank" rel="noopener"
+        >github.com/Saad-mrk</a
+      >
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
