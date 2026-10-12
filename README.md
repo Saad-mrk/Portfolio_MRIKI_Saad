@@ -1,20 +1,13 @@
 # Portfolio — Saad Mriki
 
-Portfolio personnel de **Saad Mriki** — *« Un portfolio qui a du caractère »*.
-
-Site **100 % HTML + CSS, sans JavaScript**, qui illustre plusieurs techniques CSS modernes :
-
-- **Bento grid** + sélecteur **`:has()`** (au survol d'une carte, les autres s'effacent)
-- **Ombre dure** `box-shadow: 6px 6px 0`
-- Transitions **`cubic-bezier(.2,.8,.2,1)`**
-- Couleurs **`color-mix(in oklch)`**
-- **`aspect-ratio: 1`** (carré parfait)
-- **Verre** `backdrop-filter: blur(14px)`
-- **`mix-blend-mode: difference`**
-- **Police variable** `font-variation-settings` (Roboto Flex)
-- Thème clair/sombre via **`prefers-color-scheme`**
+Portfolio personnel de **Saad Mriki**, futur ingénieur en Génie Informatique à l'ENSA Fès et développeur Full-Stack (.NET, Laravel, React).
 
 **Live :** https://saadmriki.me
+
+## Stack
+
+- HTML5 / CSS3 (design responsive, thème clair/bleu)
+- JavaScript vanilla (thème, animations au scroll, menu mobile, effet de frappe)
 
 ## Structure
 
@@ -22,15 +15,16 @@ Site **100 % HTML + CSS, sans JavaScript**, qui illustre plusieurs techniques CS
 .
 ├── index.html
 ├── css/style.css
-├── assets/            # photo + CV PDF + logo
-├── CNAME              # domaine personnalisé (saadmriki.me)
+├── js/main.js
+├── assets/           # photo + CV PDF
+├── CNAME             # domaine personnalisé (saadmriki.me)
 ├── robots.txt
 └── sitemap.xml
 ```
 
 ## Aperçu local
 
-Ouvrir `index.html` dans un navigateur, ou lancer un serveur :
+Ouvrir simplement `index.html` dans un navigateur, ou lancer un serveur :
 
 ```bash
 python -m http.server 8080
