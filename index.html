@@ -1,559 +1,155 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Saad Mriki | Full-Stack Developer | .NET & Laravel</title>
-    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <title>Saad Mriki — Un portfolio qui a du caractère</title>
 
     <meta
       name="description"
-      content="Portfolio of Saad Mriki, Full-Stack Developer specialized in .NET, Laravel, React, SQL Server and MySQL. Computer Engineering student at ENSA Fès."
+      content="Portfolio de Saad Mriki — démonstration de techniques CSS modernes : bento grid, :has(), backdrop-filter, mix-blend-mode, color-mix(in oklch) et polices variables. Sans JavaScript."
     />
-
-    <meta
-      name="keywords"
-      content="Saad Mriki, Backend Developer, Full-Stack Developer, .NET Developer, Laravel Developer, ASP.NET Core, React, Flutter, Morocco Developer Portfolio, MRIKI, Saad, Saad mrk, Fès, Computer Engineering Student, Software Developer, Web Developer, SQL Server, MySQL, C#, RESTful APIs, Clean Architecture, GitHub, ENSA Fès"
-    />
-
     <meta name="author" content="Saad Mriki" />
+    <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1a1f" media="(prefers-color-scheme: dark)" />
 
-    <!-- ── Stylesheets (order matters) ── -->
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <!-- ══════════════════════════════════════════
-       CURSOR
-  ══════════════════════════════════════════ -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
-
-    <!-- ══════════════════════════════════════════
-       NAVIGATION
-  ══════════════════════════════════════════ -->
-    <nav>
-      <a href="#hero" class="nav-logo">SM<span>.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+  <body id="top">
+    <!-- ───────── NAV ───────── -->
+    <header class="nav">
+      <a class="brand" href="#top">SM<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#bento">Bento</a>
+        <a href="#glass">Verre</a>
+        <a href="#variable">Police variable</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- ══════════════════════════════════════════
-       HERO
-  ══════════════════════════════════════════ -->
-    <section id="hero">
-      <!-- Ocean background -->
-      <div class="hero-bg">
-        <div class="clouds-layer">
-          <div class="cloud cloud-1"></div>
-          <div class="cloud cloud-2"></div>
-          <div class="cloud cloud-3"></div>
-          <div class="cloud cloud-4"></div>
-          <div class="cloud cloud-5"></div>
-        </div>
-        <div class="wave-layer">
-          <svg
-            class="wave-svg"
-            viewBox="0 0 1440 120"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1440,20 1440,60 L1440,120 L0,120 Z"
-            />
-            <path
-              d="M1440,60 C1260,100 1080,20 900,60 C720,100 540,20 360,60 C180,100 0,20 0,60 L0,120 L1440,120 Z"
-            />
-          </svg>
-          <svg
-            class="wave-svg"
-            viewBox="0 0 1440 120"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0,40 C200,90 400,10 600,50 C800,90 1000,10 1200,50 C1320,70 1380,50 1440,40 L1440,120 L0,120 Z"
-            />
-            <path
-              d="M1440,40 C1240,80 1040,0 840,40 C640,80 440,0 240,40 C120,60 60,40 0,40 L0,120 L1440,120 Z"
-            />
-          </svg>
-          <svg
-            class="wave-svg"
-            viewBox="0 0 1440 120"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0,70 C160,110 320,30 480,70 C640,110 800,30 960,70 C1120,110 1280,30 1440,70 L1440,120 L0,120 Z"
-            />
-            <path
-              d="M1440,70 C1280,110 1120,30 960,70 C800,110 640,30 480,70 C320,110 160,30 0,70 L0,120 L1440,120 Z"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <div class="hero-grid-lines"></div>
-
-      <!-- Content -->
-      <div class="hero-content">
-        <div class="hero-tag">Stage PFE 2027 — available</div>
-
-        <h1>
-          Mriki
-          <span class="line2">Saad</span>
-        </h1>
-
-        <p class="hero-sub">
-          Computer Engineering student at
-          <strong data-tooltip="ensa">ENSA Fès</strong> and Full-Stack developer
-          passionate about <strong data-tooltip="aspnet">ASP.NET Core</strong>,
-          <strong data-tooltip="laravel">Laravel</strong>
-          and <strong data-tooltip="dotnet">.NET</strong>, building secure REST
-          APIs and dynamic web interfaces.
+    <main>
+      <!-- ───────── HERO ───────── -->
+      <section class="hero">
+        <p class="eyebrow">Démo CSS</p>
+        <h1>Un portfolio qui a du caractère</h1>
+        <p class="lead">
+          Chaque bloc ci-dessous illustre une technique CSS. Survolez les cartes,
+          faites défiler la page, changez le thème de votre système&nbsp;: tout
+          se passe en CSS, sans JavaScript.
         </p>
+        <a class="btn" href="#bento">Voir les techniques</a>
+      </section>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">View my projects →</a>
-          <a href="assets/Saad_Mriki_CV.pdf" class="btn-outline" download
-            >Download CV</a
-          >
-          <a href="mailto:saadmrk12@gmail.com" class="btn-outline"
-            >Contact me</a
-          >
+      <!-- ───────── BENTO ───────── -->
+      <section class="section" id="bento">
+        <div class="section-head">
+          <h2>Bento grid et <code>:has()</code></h2>
+          <p class="sub">Survolez une carte&nbsp;: les autres s'effacent.</p>
         </div>
-      </div>
 
-      <!-- Avatar -->
-      <div class="hero-visual">
-        <div class="avatar-frame">
-          <div class="float-tag">
-            <span class="tag-dot"></span>Full-Stack Dev
+        <div class="bento">
+          <article class="tile t-hard">
+            <h3>Ombre dure</h3>
+            <p><code>box-shadow: 6px 6px 0</code></p>
+          </article>
+
+          <article class="tile t-move">
+            <h3>Mouvement</h3>
+            <p><code>cubic-bezier(.2,.8,.2,1)</code></p>
+          </article>
+
+          <article class="tile t-color">
+            <h3>Couleurs</h3>
+            <p><code>color-mix(in oklch)</code></p>
+          </article>
+
+          <article class="tile t-square">
+            <h3>Carré parfait</h3>
+            <p><code>aspect-ratio: 1</code></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ───────── GLASS ───────── -->
+      <section class="section" id="glass">
+        <div class="section-head">
+          <h2>Verre et mélange de couleurs</h2>
+        </div>
+
+        <div class="glass">
+          <div class="glass-blobs" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
           </div>
-          <div class="avatar-bg">
-            <img src="assets/photo.jpg" alt="Mriki Saad" class="avatar-img" />
-          </div>
-          <div class="avatar-glow"></div>
-          <div class="float-tag"><span>🎓</span>&nbsp;ENSA Fès</div>
-        </div>
-      </div>
 
-      <div class="scroll-hint">
-        <span class="scroll-line"></span>
-        Scroll
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-       ABOUT
-  ══════════════════════════════════════════ -->
-    <section id="about">
-      <div class="section-label">About</div>
-      <h2 class="section-title reveal">Who am I?</h2>
-
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            I am <strong>Mriki Saad</strong>, a final-year Computer Engineering
-            student at <strong data-tooltip="ensa">ENSA Fès</strong>,
-            specialized in <strong>Full-Stack development</strong> with
-            <strong data-tooltip="laravel">Laravel</strong>,
-            <strong data-tooltip="aspnet">ASP.NET Core</strong> and
-            <strong>React</strong>.
-          </p>
-          <p>
-            My expertise covers designing
-            <strong>secure REST APIs</strong>, building
-            <strong>dynamic web interfaces</strong> and
-            <strong>relational database modeling</strong>. I enjoy tackling
-            technical challenges and shipping robust, well-architected
-            applications.
-          </p>
-          <p>
-            I am currently looking for a
-            <strong>6-month end-of-study internship (PFE) starting February
-            2027</strong> in Full-Stack development.
-          </p>
-
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-num">10+</span>
-              <div class="stat-label">GitHub Projects</div>
-            </div>
-            <div class="stat">
-              <span class="stat-num">15+</span>
-              <div class="stat-label">Technologies</div>
-            </div>
-            <div class="stat">
-              <span class="stat-num">2</span>
-              <div class="stat-label">Internships</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="reveal" style="transition-delay: 0.15s">
-          <ul class="info-list">
-            <li>
-              <span class="info-key">Education</span>
-              <span class="info-val">Computer Engineering — ENSA Fès</span>
-            </li>
-            <li>
-              <span class="info-key">Email</span>
-              <span class="info-val">
-                <a href="mailto:saadmrk12@gmail.com">saadmrk12@gmail.com</a>
-              </span>
-            </li>
-            <li>
-              <span class="info-key">Phone</span>
-              <span class="info-val">
-                <a href="tel:+212621246089">+212 621 246 089</a>
-              </span>
-            </li>
-            <li>
-              <span class="info-key">Location</span>
-              <span class="info-val">Fès, Morocco</span>
-            </li>
-            <li>
-              <span class="info-key">LinkedIn</span>
-              <span class="info-val">
-                <a
-                  href="https://www.linkedin.com/in/mriki-saad/"
-                  target="_blank"
-                  rel="noopener"
-                  >mriki-saad</a
-                >
-              </span>
-            </li>
-            <li>
-              <span class="info-key">GitHub</span>
-              <span class="info-val">
-                <a
-                  href="https://github.com/Saad-mrk"
-                  target="_blank"
-                  rel="noopener"
-                  >@Saad-mrk</a
-                >
-              </span>
-            </li>
-            <li>
-              <span class="info-key">Languages</span>
-              <span class="info-val">Arabic, French, English</span>
-            </li>
-            <li>
-              <span class="info-key">Looking for</span>
-              <span class="info-val">PFE Internship — February 2027</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-       SKILLS
-  ══════════════════════════════════════════ -->
-    <section id="skills">
-      <div class="section-label">Skills</div>
-      <h2 class="section-title reveal">Tech Stack</h2>
-
-      <div class="skills-grid reveal">
-        <div class="skill-cat">
-          <div class="skill-cat-title">⚙️ Backend</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Laravel</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">ASP.NET Core</span>
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">RESTful API</span>
-            <span class="skill-tag">JWT</span>
-            <span class="skill-tag">RBAC</span>
-          </div>
-        </div>
-        <div class="skill-cat">
-          <div class="skill-cat-title">🎨 Frontend &amp; Mobile</div>
-          <div class="skill-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">JavaScript (ES6+)</span>
-            <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">Bootstrap</span>
-          </div>
-        </div>
-        <div class="skill-cat">
-          <div class="skill-cat-title">🗄️ Databases</div>
-          <div class="skill-tags">
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">SQL Server</span>
-            <span class="skill-tag">ADO.NET</span>
-            <span class="skill-tag">MCD / MLD Modeling</span>
-          </div>
-        </div>
-        <div class="skill-cat">
-          <div class="skill-cat-title">🏗️ Architecture &amp; Methods</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Clean Architecture</span>
-            <span class="skill-tag">MVC</span>
-            <span class="skill-tag">Three-Tier</span>
-            <span class="skill-tag">UML</span>
-            <span class="skill-tag">Agile / Scrum</span>
-          </div>
-        </div>
-        <div class="skill-cat">
-          <div class="skill-cat-title">🧰 Tools</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Git / GitHub</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Swagger / OpenAPI 3.0</span>
-            <span class="skill-tag">Firebase Cloud Messaging</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-       EXPERIENCE
-  ══════════════════════════════════════════ -->
-    <section id="experience">
-      <div class="section-label">Experience</div>
-      <h2 class="section-title reveal">Professional Experience</h2>
-
-      <div class="projects-grid">
-        <div class="card project-card reveal">
-          <div class="project-icon">🚀</div>
-          <div class="project-lang">Full-Stack Web &amp; Mobile</div>
-          <h3>Collabors Impact — Intern</h3>
-          <p class="project-desc">
-            <strong>Casablanca · Jun 2026 – Aug 2026.</strong> Built, within a
-            team of 5 (Agile), a CRM &amp; B2B/B2C Marketplace platform (Web and
-            Mobile) with 4 roles (suppliers, admins, clients, delivery). Designed
-            Laravel REST APIs with role-based access control (RBAC) and built web
-            interfaces with React. Modeled and optimized the MySQL relational
-            schema.
-          </p>
-          <p class="project-desc">
-            <strong>Stack:</strong> Laravel, React, MySQL, RBAC, Postman, Git.
-          </p>
-        </div>
-
-        <div class="card project-card reveal">
-          <div class="project-icon">🧾</div>
-          <div class="project-lang">Full-Stack Web</div>
-          <h3>Artificial &amp; Business Intelligence Soft — Intern</h3>
-          <p class="project-desc">
-            <strong>Jun 2025 – Jul 2025.</strong> Developed a web management
-            application for an accounting firm. Designed the data model and
-            implemented automatic PDF invoice generation.
-          </p>
-          <p class="project-desc">
-            <strong>Stack:</strong> Laravel, React, SQL Server.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-       PROJECTS
-  ══════════════════════════════════════════ -->
-    <section id="projects">
-      <div class="section-label">Projects</div>
-      <h2 class="section-title reveal">What I've Built</h2>
-
-      <div class="projects-grid">
-        <!-- Featured -->
-        <div class="card project-card featured">
-          <div>
-            <div class="project-lang">ASP.NET Core · React</div>
-            <h3 class="project-name">🛍️ LBAL — Vintage Marketplace</h3>
-            <p class="project-desc">
-              Full e-commerce marketplace (filterable catalog, real-time
-              messaging, favorites) built on a 4-layer Clean Architecture,
-              secured with JWT, refresh tokens and rate limiting, with a Swagger
-              documented API and integration tests.
+          <div class="glass-card">
+            <h3>Effet verre</h3>
+            <p>
+              <code>backdrop-filter: blur(14px)</code> floute ce qui passe
+              derrière la carte.
             </p>
-            <a
-              href="https://github.com/Saad-mrk/LBAL"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              Frontend →
-            </a>
-            <a
-              href="https://github.com/Saad-mrk/lbal-backend"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-              style="margin-left: 18px"
-            >
-              Backend API →
-            </a>
           </div>
-          <div class="project-visual">🛍️</div>
+
+          <div class="blend" aria-hidden="true">Aa</div>
         </div>
 
-        <!-- ATLAS FITNESS -->
-        <div class="card project-card">
-          <div class="project-icon">💪</div>
-          <div class="project-lang">C# · Windows Forms</div>
-          <h3>Atlas Fitness</h3>
-          <p class="project-desc">
-            Gym management app — members, subscriptions, sessions and payments,
-            with a dashboard, role-based authentication, Excel export and QR code
-            generation (C#, Windows Forms, SQL Server, ADO.NET).
-          </p>
-          <a
-            href="https://github.com/Saad-mrk/ATLAS-FITNESS"
-            target="_blank"
-            rel="noopener"
-            class="project-link"
-            >View project →</a
-          >
+        <p class="sub">
+          Le grand «&nbsp;Aa&nbsp;» utilise <code>mix-blend-mode: difference</code>&nbsp;:
+          il s'inverse selon le fond qu'il traverse.
+        </p>
+      </section>
+
+      <!-- ───────── VARIABLE FONT ───────── -->
+      <section class="section" id="variable">
+        <div class="section-head">
+          <h2>Police variable</h2>
         </div>
 
-        <!-- Vision Guard -->
-        <div class="card project-card">
-          <div class="project-icon">🛡️</div>
-          <div class="project-lang">Python · OpenCV</div>
-          <h3>Vision Guard</h3>
-          <p class="project-desc">
-            Face detection and management system for cameras (Face Watcher).
-            Records detected passages, identifies persons, displays history with
-            images and manages access.
-          </p>
-          <a
-            href="https://github.com/Saad-mrk/VISION-GUARD"
-            target="_blank"
-            rel="noopener"
-            class="project-link"
-            >View project →</a
-          >
+        <div class="vf-demo">
+          <span class="vf">Passez la souris ici</span>
         </div>
 
-        <!-- DVLD -->
-        <div class="card project-card">
-          <div class="project-icon">📊</div>
-          <div class="project-lang">C#</div>
-          <h3>DVLD Project</h3>
-          <p class="project-desc">
-            Driver's license management system — a complete administrative
-            application developed in C# with a clean layered architecture.
-          </p>
-          <a
-            href="https://github.com/Saad-mrk/DVLD-Project"
-            target="_blank"
-            rel="noopener"
-            class="project-link"
-            >View project →</a
-          >
+        <p class="sub">
+          L'épaisseur et la largeur changent avec
+          <code>font-variation-settings</code>. Pour un lien animé, regardez
+          <a class="link-underline" href="#bento">celui-ci</a>.
+        </p>
+      </section>
+    </main>
+
+    <!-- ───────── CONTACT / FOOTER ───────── -->
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="eyebrow">Saad Mriki</p>
+          <p class="footer-tag">Développeur Full-Stack — ENSA Fès</p>
         </div>
 
-        <!-- Cabinet -->
-        <div class="card project-card">
-          <div class="project-icon">🧮</div>
-          <div class="project-lang">Laravel · Blade</div>
-          <h3>Accounting Cabinet</h3>
-          <p class="project-desc">
-            Web management app for an accounting firm built with Laravel.
-            Handles clients, files and accounting operations.
-          </p>
+        <div class="contact-links">
+          <a href="mailto:saadmrk12@gmail.com">saadmrk12@gmail.com</a>
           <a
-            href="https://github.com/Saad-mrk/cabinet-comptabilite"
+            href="https://www.linkedin.com/in/mriki-saad/"
             target="_blank"
             rel="noopener"
-            class="project-link"
-            >View project →</a
+            >LinkedIn</a
           >
-        </div>
-
-        <!-- 8 Pool -->
-        <div class="card project-card">
-          <div class="project-icon">🎱</div>
-          <div class="project-lang">C#</div>
-          <h3>8 Pool Game</h3>
-          <p class="project-desc">
-            8-ball pool game with complete graphics rendering and game logic,
-            demonstrating mastery of .NET graphical interfaces.
-          </p>
-          <a
-            href="https://github.com/Saad-mrk/8_pool"
-            target="_blank"
-            rel="noopener"
-            class="project-link"
-            >View project →</a
+          <a href="https://github.com/Saad-mrk" target="_blank" rel="noopener"
+            >GitHub</a
           >
+          <a href="assets/Saad_Mriki_CV.pdf" download>CV</a>
         </div>
       </div>
-    </section>
 
-    <!-- ══════════════════════════════════════════
-       CONTACT
-  ══════════════════════════════════════════ -->
-    <section id="contact">
-      <div class="contact-bg"></div>
-      <div class="section-label">Contact</div>
-      <h2 class="section-title reveal">Let's work together.</h2>
-      <p class="contact-sub reveal" style="transition-delay: 0.1s">
-        Available for a 6-month end-of-study internship (PFE) starting February
-        2027, collaborations and new opportunities. Don't hesitate to reach out!
-      </p>
-      <div class="contact-links reveal" style="transition-delay: 0.2s">
-        <a href="mailto:saadmrk12@gmail.com" class="contact-link">
-          <span>📧</span> saadmrk12@gmail.com
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mriki-saad/"
-          target="_blank"
-          rel="noopener"
-          class="contact-link"
-        >
-          <span>💼</span> LinkedIn
-        </a>
-        <a
-          href="https://github.com/Saad-mrk"
-          target="_blank"
-          rel="noopener"
-          class="contact-link"
-        >
-          <span>🐙</span> GitHub
-        </a>
-        <a
-          href="https://wa.me/212621246089"
-          target="_blank"
-          rel="noopener"
-          class="contact-link"
-        >
-          <span>💬</span> WhatsApp
-        </a>
-        <a
-          href="assets/Saad_Mriki_CV.pdf"
-          download
-          class="contact-link"
-        >
-          <span>📄</span> Download CV
-        </a>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════ -->
-    <footer>
-      <span>© 2026 Mriki Saad — ENSA Fès</span>
-      <a href="https://github.com/Saad-mrk" target="_blank" rel="noopener"
-        >github.com/Saad-mrk</a
-      >
+      <p class="footer-note">© 2026 Mriki Saad</p>
     </footer>
-
-    <!-- ── Scripts (deferred, order matters) ── -->
-    <script src="js/cursor.js" defer></script>
-    <script src="js/tooltips.js" defer></script>
-    <script src="js/animations.js" defer></script>
   </body>
 </html>
