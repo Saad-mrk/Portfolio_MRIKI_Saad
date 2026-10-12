@@ -1,0 +1,50 @@
+/* ═══════════════════════════════════════════════
+   VARIABLES.CSS — Design Tokens
+   Edit here to retheme the entire portfolio
+═══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+:root {
+  /* ── Colors ─────────────────────────────── */
+  --warm:        #605B5A;
+  --navy:        #001B38;
+  --navy-deep:   #000F22;
+  --cream:       #F5F0EC;
+  --accent:      #C8B8A2;
+  --accent-dim:  rgba(200, 184, 162, 0.12);
+  --accent-line: rgba(200, 184, 162, 0.18);
+  --glow:        #1E5080;
+
+  /* ── Fonts ───────────────────────────────── */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* ── Spacing ─────────────────────────────── */
+  --section-pad:  100px 64px;
+  --nav-height:   80px;
+
+  /* ── Radius ──────────────────────────────── */
+  --radius-sm:    10px;
+  --radius-md:    16px;
+  --radius-lg:    24px;
+  --radius-xl:    40px;
+
+  /* ── Shadows ─────────────────────────────── */
+  --shadow-card:  0 8px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lift:  0 24px 56px rgba(0, 0, 0, 0.5);
+
+  /* ── Transitions ─────────────────────────── */
+  --ease-spring:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast:     0.2s;
+  --dur-med:      0.4s;
+  --dur-slow:     0.7s;
+
+  /* ── Z-index layers ──────────────────────── */
+  --z-bg:      0;
+  --z-content: 10;
+  --z-nav:     100;
+  --z-tooltip: 9999;
+  --z-cursor:  99999;
+}
